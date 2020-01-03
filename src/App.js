@@ -27,14 +27,17 @@ render () {
   let list = this.state.breweryData.map(item => {
   return <Name key={item.name} name={item.name}/>
   })
+  let money = this.state.breweryData.map(item => {
+    return <City key={item.city} city={item.city}/>
+    })
   return (
  <Router>
    <div className="App">
      <Nav />
      <Switch>
        <Route path ="/" exact component={Home}/>
-       <Route path="/Name" component={Name}><ul>{list}</ul></Route>
-       <Route path="/City" component={City}/>
+       <Route path="/Name" exact component={Name}><ul>{list}</ul></Route>
+       <Route path="/City" exact component={City}><ul>{money}</ul></Route>
      </Switch>
   <ul>{list}</ul>
    </div>

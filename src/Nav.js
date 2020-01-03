@@ -7,15 +7,9 @@ class Nav extends React.Component {
        return (
           <nav>
             <ul className="nav-links">
-                <Link to="/">
-                <li>Home</li>
-                </Link>
-                <Link to="/Name">
-                <li>Brewery by Name</li>
-                </Link>
-                <Link to="/City">
-                <li>Brewery by City</li>
-                </Link>
+                <Link to="/"><li>Home</li></Link>
+                <Link to="/Name"> <li>Brewery by Name</li></Link>
+                <Link to="/City"><li>Brewery by City</li></Link>
             </ul>
 
           </nav>

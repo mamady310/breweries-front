@@ -4,7 +4,7 @@ class Name extends React.Component {
     render() {
        return (
           <div>
-             
+             <ul>{this.props.name}</ul>
           </div>
        )
     }

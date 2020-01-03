@@ -4,7 +4,7 @@ class City extends React.Component {
     render() {
        return (
           <div>
-             
+             <ul>{this.props.city}</ul>
           </div>
        )
     }
