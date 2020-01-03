@@ -5,7 +5,7 @@ class City extends React.Component {
         super (props)
       this.state = {
         breweryData: [],
-        cityDatay: [],
+        cityData: [],
      }
      };
     
@@ -14,17 +14,26 @@ class City extends React.Component {
       .then(res => res.json())
       .then(res => {
         this.setState({breweryData: res})
-        console.log(this.state.breweryData)
+      //   console.log(this.state.breweryData)
       })
       }
     render() {
-        let money = this.state.breweryData.map(item => {
-            return <p>{item.city}</p>
-            // commented out bc return <City key={item.city} city={item.city}/>
+
+        let money = this.state.breweryData.map(item => {return <p>{item.city}</p>
+
+        
             })
+
+            const uniqueCities = [...new Set(this.state.breweryData.map(x => x.city))];
+            const uniqueArray = uniqueCities.map (item=><p>{item}</p>)
+            console.log(uniqueCities)
+      //   let names = money
+      //   let unique = [...new Set(names)];
+      //   console.log(unique);   
        return (
           <div>
-             <ul>{money}</ul>
+            <p>{uniqueArray}</p>
+            
           </div>
        )
     }
