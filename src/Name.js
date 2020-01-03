@@ -9,7 +9,7 @@ class Name extends React.Component {
      };
     
      async componentDidMount() {
-      fetch('http://localhost:5000/')
+      fetch('https://breweries-back.herokuapp.com/')
       .then(res => res.json())
       .then(res => {
         this.setState({breweryData: res})
@@ -18,10 +18,12 @@ class Name extends React.Component {
       }
     render() {
         let list = this.state.breweryData.map(item => {
-            return <Name key={item.name} name={item.name}/>
+            return<p>{item.name}</p>
+            // return <Name key={item.name} name={item.name}/>
             })  
        return (
           <div>
+            
              <ul>{list}</ul>
           </div>
        )

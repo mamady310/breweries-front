@@ -5,11 +5,12 @@ class City extends React.Component {
         super (props)
       this.state = {
         breweryData: [],
+        cityDatay: [],
      }
      };
     
      async componentDidMount() {
-      fetch('http://localhost:5000/')
+      fetch('https://breweries-back.herokuapp.com/')
       .then(res => res.json())
       .then(res => {
         this.setState({breweryData: res})
@@ -18,7 +19,8 @@ class City extends React.Component {
       }
     render() {
         let money = this.state.breweryData.map(item => {
-            return <City key={item.city} city={item.city}/>
+            return <p>{item.city}</p>
+            // commented out bc return <City key={item.city} city={item.city}/>
             })
        return (
           <div>
