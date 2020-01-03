@@ -36,10 +36,11 @@ render () {
      <Nav />
      <Switch>
        <Route path ="/" exact component={Home}/>
+       {/* <Route path="/Name" exact component={Name}/> */}
        <Route path="/Name" exact component={Name}><ul>{list}</ul></Route>
+       {/* <Route path="/City" exact component={City}/> */}
        <Route path="/City" exact component={City}><ul>{money}</ul></Route>
      </Switch>
-  <ul>{list}</ul>
    </div>
  </Router>
   );
