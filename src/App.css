@@ -2,11 +2,17 @@
   text-align: center;
   
 }
-.nav-links{
+.nav-links {
  flex-direction: column;
  list-style: none;
  text-align: left;
  color: white;
+}
+.nav-links li {
+  list-style: none;
+}
+a{
+  text-decoration: none;
 }
 
 #va {

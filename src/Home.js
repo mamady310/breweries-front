@@ -6,6 +6,7 @@ class Home extends React.Component {
        return (
           <div>
              <h1 id="va">Virginia Beer and Brewery </h1>
+             
           </div>
        )
     }
