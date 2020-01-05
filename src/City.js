@@ -18,10 +18,8 @@ class City extends React.Component {
       })
       }
     render() {
-
-        let money = this.state.breweryData.map(item => {return <p>{item.city}</p>
-
         
+        let money = this.state.breweryData.map(item => {return <p>{item.city}</p>
             })
 
             const uniqueCities = [...new Set(this.state.breweryData.map(x => x.city))];
