@@ -1,6 +1,8 @@
-/* body {
-  background-image: url("")
-} */
+body {
+  background-image: url("https://cdn3.vectorstock.com/i/1000x1000/36/02/clink-mugs-with-beer-icons-vector-7193602.jpg");
+  background-repeat: no-repeat;
+  
+}
 
 .App {
   text-align: center;
@@ -12,14 +14,17 @@
  display: flex;
  flex-direction: row;
  justify-content: space-around;
+ background-color: rgb(72,156,145);
+ font-size: 20px;
 }
 
 a{
   text-decoration: none;
-  
+  color: black;
 }
 
 #va {
   font-size: 50px;
+  font-style: 
 }
 

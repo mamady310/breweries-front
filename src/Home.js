@@ -1,8 +1,9 @@
 import React from "react";
-import "../src/Home.css"
+import "./Home.css"
 
 class Home extends React.Component {
     render() {
+      
        
        return (
           <div>

@@ -21,10 +21,15 @@ class Name extends React.Component {
             return<p>{item.name}</p>
             // return <Name key={item.name} name={item.name}/>
             })  
+         let url = this.state.breweryData.map(item => {
+            return<p>{item.website_url}</p>
+
+         })
        return (
           <div>
             
-             <ul>{list}</ul>
+            <div>{list}</div><div>{url}</div>
+            
           </div>
        )
     }
