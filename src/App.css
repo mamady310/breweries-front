@@ -1,18 +1,22 @@
+/* body {
+  background-image: url("")
+} */
+
 .App {
   text-align: center;
   
 }
 .nav-links {
- flex-direction: column;
  list-style: none;
- text-align: left;
  color: white;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
 }
-.nav-links li {
-  list-style: none;
-}
+
 a{
   text-decoration: none;
+  
 }
 
 #va {
