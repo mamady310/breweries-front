@@ -17,6 +17,9 @@ body {
  background-color: rgb(72,156,145);
  font-size: 20px;
 }
+nav {
+  height: 20px
+}
 
 a{
   text-decoration: none;

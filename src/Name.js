@@ -28,7 +28,7 @@ class Name extends React.Component {
        return (
           <div>
             
-            <div>{list}</div><div>{url}</div>
+            <div>{list}</div>
             
           </div>
        )
