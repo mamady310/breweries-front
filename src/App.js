@@ -5,8 +5,8 @@ import Home from "./Home";
 import Name from "./Name";
 import City from "./City";
 import Nav from "./Nav";
-import Beer from "./Picture/beer.jpg"
-import Contact from "./Contact"
+import Beer from "./Picture/beer.jpeg";
+import Contact from "./Contact";
 
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
