@@ -29,7 +29,7 @@ class City extends React.Component {
       //   let unique = [...new Set(names)];
       //   console.log(unique);   
        return (
-          <div>
+          <div className="C">
             <p>{uniqueArray}</p>
             
           </div>

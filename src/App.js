@@ -5,7 +5,9 @@ import Home from "./Home";
 import Name from "./Name";
 import City from "./City";
 import Nav from "./Nav";
-import "../src/Image/beer.jpeg"
+import Beer from "./Picture/beer.jpg"
+import Contact from "./Contact"
+
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 class App extends Component {
@@ -25,7 +27,7 @@ class App extends Component {
   })
   }
 render () {
-  
+   
  
   return (
  <Router>
@@ -37,6 +39,7 @@ render () {
        {/* <Route path="/Name" exact component={Name}><ul>{list}</ul></Route> */}
        <Route path="/City" exact component={City}/>
        {/* <Route path="/City" exact component={City}><ul>{money}</ul></Route> */}
+       <Route path="/Contact" exact component={Contact}/>
      </Switch>
    </div>
  </Router>
