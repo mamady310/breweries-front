@@ -19,7 +19,7 @@ class Name extends React.Component {
       }
     render() {
         let list = this.state.breweryData.map(item => {
-            return<p>{item.name}</p>
+            return<p> <Link to={item.website_url}>{item.name}</Link></p>
             // return <Name key={item.name} name={item.name}/>
             })  
          let url = this.state.breweryData.map(item => {
@@ -27,7 +27,7 @@ class Name extends React.Component {
 
          })
        return (
-          <div className="N">
+          <div>
             
             <ul>{list}</ul>
             
