@@ -19,7 +19,7 @@ class App extends Component {
  };
 
  async componentDidMount() {
-  fetch('https://breweries-back.herokuapp.com/')
+  fetch('https://breweries-back1.herokuapp.com/')
   .then(res => res.json())
   .then(res => {
     this.setState({breweryData: res})
