@@ -5,6 +5,7 @@ import Home from "./Home";
 import Name from "./Name";
 import City from "./City";
 import Nav from "./Nav";
+import "../src/Image/beer.jpeg"
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 class App extends Component {
@@ -24,12 +25,8 @@ class App extends Component {
   })
   }
 render () {
-  // let list = this.state.breweryData.map(item => {
-  // return <Name key={item.name} name={item.name}/>
-  // })
-  // let money = this.state.breweryData.map(item => {
-  //   return <City key={item.city} city={item.city}/>
-  //   })
+  
+ 
   return (
  <Router>
    <div className="App">
