@@ -5,7 +5,7 @@ import Home from "./Home";
 import Name from "./Name";
 import City from "./City";
 import Nav from "./Nav";
-import Beer from "./Picture/beer.jpeg";
+// import Beer from "./Picture/beer.jpeg"; will import picture from local file later
 import Contact from "./Contact";
 
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
@@ -19,7 +19,7 @@ class App extends Component {
  };
 
  async componentDidMount() {
-  fetch('https://breweries-back1.herokuapp.com/')
+  fetch('https://breweries-back.herokuapp.com/')
   .then(res => res.json())
   .then(res => {
     this.setState({breweryData: res})

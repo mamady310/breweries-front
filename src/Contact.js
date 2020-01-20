@@ -21,13 +21,29 @@ class Contact extends React.Component {
     render() {
         
         return (
-            <form onSubmit={this.handleSubmit}>
+          <div>
+            <h1>Contact Information 
+            </h1>
+            <form className="form" onSubmit={this.handleSubmit}>
               <label>
-                Name:
+                Name
                 <input type="text" value={this.state.value} onChange={this.handleChange} />
+              </label>
+              <label>
+                City
+                <input type="text" value=
+                {this.state.value} onChange=
+                {this.handleChange}/>
+              </label>
+              <label>
+                State
+                <input type="text" value=
+                {this.state.value} onChange=
+                {this.handleChange}/>
               </label>
               <input type="submit" value="Submit" />
             </form>
+            </div>
           );
         }
       }

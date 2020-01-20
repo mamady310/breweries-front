@@ -10,7 +10,7 @@ class Name extends React.Component {
      };
     
      async componentDidMount() {
-      fetch('https://breweries-back1.herokuapp.com/')
+      fetch('https://breweries-back.herokuapp.com/')
       .then(res => res.json())
       .then(res => {
         this.setState({breweryData: res})
@@ -19,7 +19,9 @@ class Name extends React.Component {
       }
     render() {
         let list = this.state.breweryData.map(item => {
-            return<p> <Link to={item.website_url}>{item.name}</Link></p>
+            return <li><a href={item.website_url}>{item.name}</a></li>
+
+            // <p> <Link to={item.website_url}>{item.name}</Link></p>
             // return <Name key={item.name} name={item.name}/>
             })  
          let url = this.state.breweryData.map(item => {
@@ -27,7 +29,7 @@ class Name extends React.Component {
 
          })
        return (
-          <div>
+          <div >
             
             <ul>{list}</ul>
             

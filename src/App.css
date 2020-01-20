@@ -24,6 +24,9 @@ a{
   text-decoration: none;
   color: black;
 }
+li {
+  list-style: none;  
+}
 .C{
   margin-left: 600px;
   margin-top: 95px;
