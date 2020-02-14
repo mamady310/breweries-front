@@ -19,7 +19,7 @@ class Name extends React.Component {
       }
     render() {
         let list = this.state.breweryData.map(item => {
-            return <li><a href={item.website_url}>{item.name}</a></li>
+            return <li><a target="_blank" href={item.website_url}>{item.name}</a></li>
             })  
          let url = this.state.breweryData.map(item => {
             return<p>{item.website_url}</p>

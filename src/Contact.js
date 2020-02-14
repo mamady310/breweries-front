@@ -5,15 +5,27 @@ import axios from "axios";
 class Contact extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {value: ''};
+        this.state = {name: ''};
+        this.state = {city: ''};
+        this.state = {state: ''};
     
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChangeName = this.handleChangeName.bind(this);
+        this.handleChangeCity = this.handleChangeCity.bind(this);
+        this.handleChangeState = this.handleChangeState.bind(this);
+
       }
-      handleChange(event) {
-        this.setState({value: event.target.value});
+      handleChangeName(event) {
+        event.preventDefault();
+        this.setState({name: event.target.value});
       }
-    
+      handleChangeCity(event){
+        event.preventDefault();
+        this.setState({city: event.target.value});
+      }
+      handleChangeState(event) {
+        event.preventDefault();
+        this.setState({state: event.target.value})
+      }
       handleSubmit(event) {
         alert('A name was submitted: ' + this.state.value);
         event.preventDefault();
@@ -28,19 +40,19 @@ class Contact extends React.Component {
             <form className="form" onSubmit={this.handleSubmit}>
               <label>
                 Name
-                <input type="text" value={this.state.value} onChange={this.handleChange} />
+                <input type="text" value={this.state.value} onChange={this.handleChangeName} />
               </label>
               <label>
                 City
                 <input type="text" value=
                 {this.state.value} onChange=
-                {this.handleChange}/>
+                {this.handleChangeCity}/>
               </label>
               <label>
                 State
                 <input type="text" value=
                 {this.state.value} onChange=
-                {this.handleChange}/>
+                {this.handleChangeState}/>
               </label>
               <input type="submit" value="Submit" />
             </form>
