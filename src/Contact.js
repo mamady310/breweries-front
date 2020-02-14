@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 
 class Contact extends React.Component {
@@ -22,7 +23,7 @@ class Contact extends React.Component {
         
         return (
           <div>
-            <h1>Contact Information 
+            <h1>New Brewery 
             </h1>
             <form className="form" onSubmit={this.handleSubmit}>
               <label>

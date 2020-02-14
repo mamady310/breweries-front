@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import React from "react";
 import './App.css';
 import Home from "./Home";
 import Name from "./Name";
@@ -14,7 +13,7 @@ class App extends Component {
   constructor (props){
     super (props)
   this.state = {
-    breweryData: [],
+    drinksData: [],
  }
  };
 
@@ -22,7 +21,7 @@ class App extends Component {
   fetch('https://breweries-back.herokuapp.com/')
   .then(res => res.json())
   .then(res => {
-    this.setState({breweryData: res})
+    this.setState({drinksData: res})
     // console.log(this.state.breweryData)
   })
   }
@@ -36,9 +35,7 @@ render () {
      <Switch>
        <Route path ="/" exact component={Home}/>
        <Route path="/Name" exact component={Name}/>
-       {/* <Route path="/Name" exact component={Name}><ul>{list}</ul></Route> */}
        <Route path="/City" exact component={City}/>
-       {/* <Route path="/City" exact component={City}><ul>{money}</ul></Route> */}
        <Route path="/Contact" exact component={Contact}/>
      </Switch>
    </div>
